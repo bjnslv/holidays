@@ -41,7 +41,18 @@ getCount("abracadabra");
 
 /5.List Filtering/
 
-
+function filter_list(l) {
+  var result = [];
+  
+  for (var i = 0; i < l.length; i++) {
+    if (typeof l[i] === 'number') {
+      result.push(l[i]);
+      }
+    }
+    return result;
+}
+filter_list([1,2,'a','b']);
+filter_list([1,2,'aasf','1','123',123]);
 
 /6.Isograms/
 
