@@ -1,0 +1,38 @@
+/1.Find The Parity Outlier/
+
+
+
+/2.Exes and Ohs/
+
+
+
+/3.Shortest Word/
+
+
+
+/4.Vowel Count/
+
+function getCount(str) {
+  var vowelsCount = 0;
+  var regex = /[aeiouAEIOU]/;
+  
+  for (var i = 0; i < str.length; i++) {
+    if (regex.test(str[i])) {
+    vowelsCount++;
+    }
+  }
+ 
+  return vowelsCount;
+}
+getCount("abracadabra");
+
+/5.List Filtering/
+
+
+
+/6.Isograms/
+
+
+
+/7.Jaden Casing Strings/
+
