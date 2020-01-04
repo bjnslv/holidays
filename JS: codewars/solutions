@@ -4,7 +4,20 @@
 
 /2.Exes and Ohs/
 
-
+function XO(str) {
+  var result = 0;
+  
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] === 'x' || str[i] === 'X') {
+      result += 1;
+      } else if (str[i] === 'o' || str[i] === 'O') {
+      result -= 1;
+      }
+    }
+    return result === 0;
+}
+XO('xo');
+XO("xxOo");
 
 /3.Shortest Word/
 
