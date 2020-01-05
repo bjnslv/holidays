@@ -11,6 +11,9 @@ var odds = integers.filter(function (x) {
 
 return odds.length > 1 ?  evens[0] :  odds[0];
 }
+findOutlier([0, 1, 2]);
+findOutlier([2,6,8,10,3]);
+
 
 /2.Exes and Ohs/
 
