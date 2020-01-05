@@ -1,6 +1,16 @@
 /1.Find The Parity Outlier/
 
+function findOutlier(integers) {
+var evens = integers.filter(function (x) {
+  return x % 2 === 0;
+});
 
+var odds = integers.filter(function (x) {
+  return x % 2 !== 0;
+});
+
+return odds.length > 1 ?  evens[0] :  odds[0];
+}
 
 /2.Exes and Ohs/
 
