@@ -48,6 +48,7 @@ for (var i = 0; i < arr.length; i++) {
   return shortest.length;
 }
 
+
 /4.Vowel Count/
 
 function getCount(str) {
@@ -81,7 +82,19 @@ filter_list([1,2,'aasf','1','123',123]);
 
 /6.Isograms/
 
-
+function isIsogram(str){
+ 
+ var upperCase = str.toUpperCase();
+ 
+ for(let i = 0; i < upperCase.length; i++) {
+   if (upperCase.split(upperCase[i]).length-1 > 1) {
+    return false;
+   }  
+  }
+  return true;
+}
+isIsogram("Dermatoglyphics");
+isIsogram("moOse");
 
 /7.Jaden Casing Strings/
 
