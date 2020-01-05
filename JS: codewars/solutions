@@ -1,101 +1,19 @@
 /1.Find The Parity Outlier/
-https://www.codewars.com/kata/reviews/54cd002407ba21e38f00000f/groups/5e1218b1884174000166b841
-
-function findOutlier(integers) {
-var evens = integers.filter(function (x) {
-  return x % 2 === 0;
-});
-
-var odds = integers.filter(function (x) {
-  return x % 2 !== 0;
-});
-
-return odds.length > 1 ?  evens[0] :  odds[0];
-}
-findOutlier([0, 1, 2]);
-findOutlier([2,6,8,10,3]);
-
+https://www.codewars.com/kata/reviews/565349bca24428f2870000a9/groups/5e11e392bb26620001acea49
 
 /2.Exes and Ohs/
-
-function XO(str) {
-  var result = 0;
-  
-  for (var i = 0; i < str.length; i++) {
-    if (str[i] === 'x' || str[i] === 'X') {
-      result += 1;
-      } else if (str[i] === 'o' || str[i] === 'O') {
-      result -= 1;
-      }
-    }
-    return result === 0;
-}
-XO('xo');
-XO("xxOo");
+https://www.codewars.com/kata/reviews/55908ab5932c2fc59f000070/groups/5e0f2b408c89df0001843191
 
 /3.Shortest Word/
-
-function findShort(s){
-
-var arr = s.split(' ');
-
-var shortest = arr[0];
-
-for (var i = 0; i < arr.length; i++) {
-  if (arr[i].length < shortest.length) {
-    shortest = arr[i];
-    }
-  } 
-  return shortest.length;
-}
-
+https://www.codewars.com/kata/reviews/57cec2caf0fe9cd5df000072/groups/58abdde13de21d80f0000931
 
 /4.Vowel Count/
 
-function getCount(str) {
-  var vowelsCount = 0;
-  var regex = /[aeiouAEIOU]/;
-  
-  for (var i = 0; i < str.length; i++) {
-    if (regex.test(str[i])) {
-    vowelsCount++;
-    }
-  }
- 
-  return vowelsCount;
-}
-getCount("abracadabra");
 
 /5.List Filtering/
-
-function filter_list(l) {
-  var result = [];
-  
-  for (var i = 0; i < l.length; i++) {
-    if (typeof l[i] === 'number') {
-      result.push(l[i]);
-      }
-    }
-    return result;
-}
-filter_list([1,2,'a','b']);
-filter_list([1,2,'aasf','1','123',123]);
+https://www.codewars.com/kata/reviews/5411f7ec17dc0b7b7e000231/groups/574eade92be0e277150011d6
 
 /6.Isograms/
-
-function isIsogram(str){
- 
- var upperCase = str.toUpperCase();
- 
- for(let i = 0; i < upperCase.length; i++) {
-   if (upperCase.split(upperCase[i]).length-1 > 1) {
-    return false;
-   }  
-  }
-  return true;
-}
-isIsogram("Dermatoglyphics");
-isIsogram("moOse");
+https://www.codewars.com/kata/reviews/54cd002407ba21e38f00000f/groups/5e1218b1884174000166b841
 
 /7.Jaden Casing Strings/
-
