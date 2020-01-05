@@ -1,4 +1,5 @@
 /1.Find The Parity Outlier/
+https://www.codewars.com/kata/reviews/54cd002407ba21e38f00000f/groups/5e1218b1884174000166b841
 
 function findOutlier(integers) {
 var evens = integers.filter(function (x) {
